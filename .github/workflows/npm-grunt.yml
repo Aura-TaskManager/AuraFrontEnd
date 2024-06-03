@@ -44,4 +44,4 @@ jobs:
         with:
           push: true
           tags: |
-            anailayda/aura:latest-frontend
+            ranailayda/aura:latest-frontend
