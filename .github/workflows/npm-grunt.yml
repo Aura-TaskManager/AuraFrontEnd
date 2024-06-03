@@ -23,7 +23,6 @@ jobs:
 
       - name: Build
         run: |
-          cd tennis-supplies-frontend
           npm install
           npm run build
   deploy:
@@ -43,7 +42,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: tennis-supplies-frontend
           push: true
           tags: |
             anailayda/aura:latest-frontend
